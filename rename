@@ -1,0 +1,2 @@
+ls  *.DAT| awk 'BEGIN{ a=38 } {printf "mv %s DATA%05d.DAT\n", $0, a++ }' | bash
+
